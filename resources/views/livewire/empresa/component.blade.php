@@ -1,8 +1,9 @@
 <div class="card">
     <div class="card-header">
         <h4 class="card-title"><b>{{ $componentName }}</b> | {{ $pageTitle }}</b></h4>
-        <button class="btn btn-sm btn-warning" data-toggle="modal" data-target="#modalEmpresa"> + Agregar
-            Empresa</button>
+        <button class="btn btn-sm btn-warning" data-toggle="modal" data-target="#modalEmpresa">
+             + Agregar Empresa
+        </button>
         <div class="card-tools">
             <div class="input-group input-group-sm" style="width: 150px;">
                 <input type="text" name="table_search" class="form-control float-right" placeholder="Search">
@@ -51,7 +52,6 @@
     @push('scripts')
         <script>
             window.livewire.on('toggleModal', () => $('#modalEmpresa').modal('toggle'));
-
         </script>
     @endpush
 </div>

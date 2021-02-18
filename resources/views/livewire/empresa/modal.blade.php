@@ -39,7 +39,7 @@
              <!--fin del cuerpo del modal-->
              <!--pie del modal-->
              <div class="modal-footer justify-content-between">
-                 <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancelar</button>
+                 <button type="button" wire:click.prevent="cancel()" class="btn btn-outline-dark" data-dismiss="modal">Cancelar</button>
                  <button type="button" wire:click.prevent="save()" class="btn btn-outline-dark">Guardar</button>
              </div>
              <!--fin del pie del modal-->

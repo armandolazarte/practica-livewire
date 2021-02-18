@@ -41,7 +41,7 @@ class EmpresaController extends Component
     {
         $this->updateMode = true;
 
-        $record = Empresa::find($id)->first();
+        $record = Empresa::find($id);
 
         $this->selected_id = $record->id;
         $this->nombre = $record->nombre;
@@ -49,6 +49,12 @@ class EmpresaController extends Component
         $this->localidad = $record->localidad;
         $this->direccion = $record->direccion;
         $this->email = $record->email;
+    }
+
+    public function cancel()
+    {
+        $this->updateMode = false;
+        $this->resetUI();
     }
 
     //crear registro//
